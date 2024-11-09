@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Statement</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bank Statement</h2>
+    <p>Account Holder: {{ logger_data.full_name }}</p>
+    <p>Email: {{ logger_data.email_id }}</p>
+    <p>Account Number: {{ logger_data.account_number }}</p>
+    <br>
+    <table>
+        <tr>
+            <th>Account No</th>
+            <th>Credit</th>
+            <th>Withdraw</th>
+            <th>Balance</th>
+            <th>Date & Time</th>
+        </tr>
+        {% for i in user_bankstatment %}
+        <tr>
+            <td>{{ i.account_number }}</td>
+            <td>{{ i.deposit_number }}</td>
+            <td>{{ i.withdraw_amount }}</td>
+            <td>{{ i.balance_amount }}</td>
+            <td>{{ i.registered_dt }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

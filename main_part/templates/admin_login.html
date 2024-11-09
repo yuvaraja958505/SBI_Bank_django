@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="../static/landingpage/img/640.png">
+    <link rel="stylesheet" href="../static/landingpage/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="../static/landingpage/img/640.png" alt="SBI Logo" class="logo">
+            <nav>
+                <div class="container-fluid ">
+
+                    <nav class=" navbar navbar-expand-lg navbar-light ">
+                      <div class="container-fluid  ">
+                        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarNav">
+                          <ul class="navbar-nav ">
+                            <li class="nav-item ms-3 ">
+                              <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item ms-3 ">
+                              <a class="nav-link active text-white" href="service.html">product and services</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                              <a class="nav-link active text-white" href="#">How Do i(Help)</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                              <a class="nav-link  active text-white" href="#" tabindex="-1" aria-disabled="true">Manage Debit card E-Mandate</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                              <a class="nav-link  active text-white" href="contact.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+          
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="login-container-fluid">
+            <h2>Login to Admin SBI</h2>
+            
+            <form">
+                <label for="username">Admin Username*</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+
+                <label for="password">Admin Password*</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+
+
+                <button type="submit" class="login-btn"  >Login</button>
+                <br>
+                <br>
+                <a href="/admin_dashboard">dashboard</a>
+                <a href="{% url 'index' %}">Home</a>
+                
+            </form>
+        </div>
+        <div class="info-container">
+            <div class="info-image">
+                <img src="../static/landingpage/img/be safe.webp" alt="Be Vigilant Be Safe">
+            </div>
+            <div class="info-text">
+                <p><strong>Dear Customer,</strong></p>
+                <ul>
+                    <li>OTP based login & Mandatory login password change after 180 days introduced for added security.</li>
+                    <li>Please do not share OTP/password/user information with anyone. Bank never asks for such information.</li>
+                    <li>For better control & security of your account, you can Lock or Unlock your INB access through link "Lock & Unlock User" available at bottom of this Page.</li>
+                    <li>Mandatory Profile password change after 365 days introduced for added security.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div class="container-fluid footer  ">
+        <div class="content3">
+          <p>© State Bank of India (APM Id: Serv_Tran_552)</p>
+        </div>
+        <div class="content4 ">
+          <p class=" ">
+            Site best viewed at 1024 x 768 resolution in Microsoft Edge 79 +, Mozilla 96 +, Google Chrome 97 +</p>
+        </div>
+      </div>
+
+      <script src="../static/landingpage/js/main.js"></script>
+       
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+ 
+
+    
+</body>
+</html>

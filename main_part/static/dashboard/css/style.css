@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #005baa;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    margin-left: 800px;
+}
+
+.header-links a, .logout {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.language-selector select {
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.logout {
+    background-color: #ff3333;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    padding: 20px;
+    position: absolute;
+    height: 100%;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 3px;
+    display: block;
+}
+
+.quick-links ul li a:hover {
+    background-color: #555;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.deposit-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.deposit-form-container h2 {
+    text-align: center;
+    color: #005baa;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+.container-fluid.footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .deposit-form-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .buttons .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
